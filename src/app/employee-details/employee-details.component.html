@@ -1,0 +1,18 @@
+<h3>View Employee Details</h3>
+<div>
+    <div>
+        <label><b>First Name:</b></label> {{ employee.firstname }}
+    </div>
+    <div>
+        <label><b>Last Name:</b></label> {{ employee.lastname }}
+    </div>
+    <div>
+        <label><b>Email Id:</b></label> {{ employee.emailId }}
+    </div>
+
+    <p>
+        <br>
+        <button (click) = "deleteEmployee(employee.id)" class="btn btn-danger">Delete</button>
+        <button (click) = "goToEmployeeList()" class="btn btn-info" style="margin-left: 10px;">Back</button>
+    </p>
+</div>
